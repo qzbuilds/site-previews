@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plumbing Service Company Inc., &amp; HVAC | Plumber in Shallowater, TX</title>
+<meta name="description" content="Plumbing Service Company Inc., &amp; HVAC: Water heaters and garbage disposals for your home. Call (806) 745-1822.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" href="archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>/* 底板样式：水管类本地服务。只有一个强调色，圆角统一 12px，跟随系统深浅色。 */
+@font-face {
+  font-family: "Archivo";
+  src: url("archivo-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #f4f5f3;
+  --surface: #fbfbfa;
+  --ink: #15191d;
+  --muted: #4a525a;
+  --line: #d9dcdf;
+  --accent: #c2410c;
+  --accent-ink: #fbfbfa;
+  --accent-text: #b13c0b;
+  --star: #b45309;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgb(21 25 29 / 0.06), 0 8px 24px rgb(21 25 29 / 0.06);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1316;
+    --surface: #161b1f;
+    --ink: #e9edf0;
+    --muted: #a5afb8;
+    --line: #2a3238;
+    --accent: #f97316;
+    --accent-ink: #0f1316;
+    --accent-text: #fb923c;
+    --star: #fbbf24;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+.icon { width: 1.25em; height: 1.25em; flex: none; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+.skip {
+  position: absolute; left: -9999px; top: 8px;
+  background: var(--surface); color: var(--ink); padding: 8px 12px; border-radius: var(--radius);
+}
+.skip:focus { left: 8px; z-index: 30; }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* 演示提示条：只在演示站出现 */
+.demo-note {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  padding: 6px 0;
+  text-align: center;
+}
+
+/* 顶栏 */
+.top {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: none; font-weight: 750; font-size: 19px; letter-spacing: -0.01em; }
+.mark {
+  width: 36px; height: 36px; border-radius: var(--radius);
+  background: var(--accent); color: var(--accent-ink);
+  display: grid; place-items: center; font-weight: 800; font-size: 18px;
+}
+.top-right { display: flex; align-items: center; gap: 20px; }
+.top-hours { color: var(--muted); font-size: 15px; }
+
+/* 按钮：主按钮打电话，次按钮发短信 */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 48px; padding: 0 20px;
+  border-radius: var(--radius);
+  font-weight: 700; font-size: 17px; text-decoration: none; white-space: nowrap;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-call { background: var(--accent); color: var(--accent-ink); }
+.btn-call:hover { filter: brightness(1.06); }
+.btn-text { border: 1.5px solid var(--ink); color: var(--ink); }
+.btn-text:hover { background: var(--surface); }
+.top .btn { min-height: 44px; font-size: 16px; padding: 0 16px; }
+
+/* 首屏：左边说做什么、在哪做，右边是打电话需要的全部信息 */
+.hero { padding: 56px 0 24px; }
+.hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+  line-height: 1.05; letter-spacing: -0.025em; font-weight: 780;
+  max-width: 16ch;
+}
+.hero p.sub { margin: 0 0 28px; color: var(--muted); font-size: 1.15rem; max-width: 40ch; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.callcard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+.rating { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.rating .score { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.stars { display: inline-flex; gap: 2px; color: var(--accent-text); }
+.rating .count { color: var(--muted); font-size: 15px; width: 100%; }
+.facts { list-style: none; margin: 22px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); display: grid; gap: 14px; }
+.facts li { display: flex; gap: 12px; align-items: flex-start; }
+.facts .icon { margin-top: 3px; color: var(--accent-text); }
+.bignum { display: block; margin-top: 22px; font-size: 1.9rem; font-weight: 780; letter-spacing: -0.02em; text-decoration: none; color: var(--accent-text); }
+
+/* 服务：两列清单，不做卡片 */
+.section { padding: 72px 0; }
+.section h2 { margin: 0 0 32px; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; letter-spacing: -0.02em; font-weight: 760; }
+.services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 56px; }
+.services li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+.services .ic {
+  width: 44px; height: 44px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--line);
+  display: grid; place-items: center; color: var(--accent-text);
+}
+.services h3 { margin: 2px 0 2px; font-size: 1.1rem; font-weight: 720; }
+.services p { margin: 0; color: var(--muted); }
+
+/* 评价：一条大的，两条小的 */
+.reviews { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+.reviews figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.reviews .lead { grid-row: span 2; display: flex; flex-direction: column; justify-content: space-between; padding: 32px; }
+.reviews blockquote { margin: 12px 0 16px; font-size: 1.05rem; }
+.reviews .lead blockquote { font-size: 1.45rem; line-height: 1.4; letter-spacing: -0.01em; font-weight: 560; }
+.reviews figcaption { color: var(--muted); font-size: 15px; }
+.reviews-more { margin-top: 20px; color: var(--muted); font-size: 15px; }
+
+/* 服务区域：一条带底色的横条 */
+.area { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.area .wrap { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
+.area h2 { margin-bottom: 18px; }
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.chips li { border: 1px solid var(--line); background: var(--bg); border-radius: var(--radius); padding: 8px 14px; font-weight: 600; }
+.area p { margin: 18px 0 0; color: var(--muted); }
+
+.foot { padding: 40px 0 48px; color: var(--muted); font-size: 15px; }
+.foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+.foot strong { color: var(--ink); }
+
+/* 手机底部固定的打电话、发短信条 */
+.dock { display: none; }
+
+@media (max-width: 860px) {
+  .hero { padding: 32px 0 8px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 32px; }
+  .services { grid-template-columns: 1fr; gap: 22px; }
+  .reviews { grid-template-columns: 1fr; }
+  .reviews .lead { grid-row: auto; padding: 24px; }
+  .reviews .lead blockquote { font-size: 1.2rem; }
+  .area .wrap { grid-template-columns: 1fr; }
+  .section { padding: 52px 0; }
+  .top-hours { display: none; }
+}
+
+@media (max-width: 640px) {
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .top .btn { display: none; }
+  .top .wrap { height: 60px; }
+  .ctas .btn { flex: 1 1 100%; justify-content: center; }
+  .dock {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 25;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: var(--bg); border-top: 1px solid var(--line);
+  }
+  .dock .btn { justify-content: center; padding: 0 12px; }
+  .dock.single { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}
+
+.section.tight { padding-top: 0; }
+
+/* 有照片时的首屏：左字右图，下面一条资料栏 */
+.hero-photo { margin: 0; }
+.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); background: var(--surface); }
+figure figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; }
+.factbar {
+  list-style: none; margin: 32px 0 0; padding: 18px 22px;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr); gap: 14px 36px; align-items: center;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.factbar li { display: flex; gap: 10px; align-items: center; }
+.factbar .icon { color: var(--accent-text); }
+.factbar strong { font-weight: 760; }
+
+/* 干活照片：一宽一窄 */
+.work { display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; }
+.work figure { margin: 0; }
+.work img { display: block; width: 100%; height: auto; border-radius: var(--radius); background: var(--surface); }
+.work-wide img { aspect-ratio: 3 / 2; object-fit: cover; }
+.work-narrow img { aspect-ratio: 15 / 16; object-fit: cover; }
+
+@media (max-width: 860px) {
+  .factbar { margin-top: 24px; grid-template-columns: 1fr; }
+  .work { grid-template-columns: 1fr; }
+}
+.hero .factwrap { display: block; }
+
+/* 手机首屏按钮下面的营业时间，电脑上顶栏已经有了 */
+.hero-hours { display: none; }
+@media (max-width: 640px) {
+  .hero-hours { display: flex; gap: 8px; align-items: center; margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+  .hero-hours .icon { color: var(--accent-text); }
+}
+
+@media (max-width: 640px) {
+  .work-narrow img { aspect-ratio: 3 / 2; }
+}
+.mark.wide { width: auto; min-width: 36px; padding: 0 8px; font-size: 16px; letter-spacing: 0.02em; }
+:root{--accent:#b91c1c;--accent-text:#b91c1c}@media (prefers-color-scheme: dark){:root{--accent:#f87171;--accent-text:#f87171}}</style>
+<link rel="preload" as="image" imagesrcset="p5-1200.webp 1200w, p5-760.webp 760w" imagesizes="(max-width: 860px) 100vw, 560px">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="demo-note" aria-label="Preview notice">This is a preview mockup made for Plumbing Service Company Inc., &amp; HVAC. It is not their official website.</aside>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main"><span class="mark wide" aria-hidden="true">PS</span><span>Plumbing Service Company Inc., &amp; HVAC</span></a>
+    <div class="top-right">
+      <span class="top-hours">Open 24 hours</span>
+      <a class="btn btn-call" href="tel:+18067451822"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg><span>Call (806) 745-1822</span></a>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <h1 id="h1">Plumbing repair in Shallowater</h1>
+        <p class="sub">Water heaters and garbage disposals for your home.</p>
+        <div class="ctas"><a class="btn btn-call" href="tel:+18067451822"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg><span>Call (806) 745-1822</span></a></div>
+        <p class="hero-hours"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg><span>Open 24 hours</span></p>
+        <p class="hero-hours"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Based in Shallowater. Call to check your area.</span></p>
+      </div>
+      <figure class="hero-photo"><img src="p5-1200.webp" srcset="p5-1200.webp 1200w, p5-760.webp 760w" sizes="(max-width: 860px) 100vw, 560px" width="1200" height="800" alt="Illustrative photo of a plumber at work" fetchpriority="high" decoding="async"><figcaption>Illustrative photo</figcaption></figure>
+    </div>
+    <div class="wrap factwrap"><ul class="factbar">
+      <li><span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span><span><strong>5.0</strong> from 75 Google reviews</span></li>
+      <li><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg><span>Open 24 hours</span></li>
+      <li><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Based in Shallowater. Call to check your area.</span></li>
+      
+    </ul></div>
+  </section>
+
+  <section class="section" aria-labelledby="h-services">
+    <div class="wrap">
+      <h2 id="h-services">What we fix</h2>
+      <ul class="services">
+        <li><span class="ic"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,153V48a8,8,0,0,0-16,0V153a32,32,0,1,0,16,0Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,120,200Zm40-66V48a40,40,0,0,0-80,0v86a64,64,0,1,0,80,0Zm-40,98a48,48,0,0,1-27.42-87.4A8,8,0,0,0,96,138V48a24,24,0,0,1,48,0v90a8,8,0,0,0,3.42,6.56A48,48,0,0,1,120,232ZM177.3,80.77a8,8,0,0,1,2.33-11.07c15-9.79,26.87-4.75,35.51-1.06C223,72,227.76,74,235.63,68.89a8,8,0,0,1,8.74,13.41C237.88,86.53,232,88,226.69,88c-7,0-12.92-2.54-17.83-4.63C201,80,196.24,78,188.37,83.11A8,8,0,0,1,177.3,80.77Zm69.4,22.46a8,8,0,0,1-2.33,11.07C237.88,118.53,232,120,226.69,120c-7,0-12.92-2.54-17.83-4.63-7.87-3.36-12.62-5.38-20.49-.25a8,8,0,0,1-8.74-13.41c15-9.79,26.87-4.75,35.51-1.06,7.87,3.36,12.62,5.39,20.49.25A8,8,0,0,1,246.7,103.23Z"/></svg></span><div><h3>Water heaters</h3><p>Mentioned in 1 Google review.</p></div></li>
+        <li><span class="ic"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg></span><div><h3>Garbage disposals</h3><p>Mentioned in 1 Google review.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  
+
+  <section class="section tight" aria-labelledby="h-reviews">
+    <div class="wrap">
+      <h2 id="h-reviews">What customers say</h2>
+      <div class="reviews">
+        <figure class="lead">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span>
+          <blockquote>“Took care of our problem quickly and efficiently. Very reasonable price.”</blockquote>
+          <figcaption>Shirley Whitson, Google review</figcaption>
+        </figure>
+        <figure class="">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span>
+          <blockquote>“I absolutely value the integrity of Dusty and his company. His reputation exceeds expectations, and I can’t recommend them highly enough.”</blockquote>
+          <figcaption>Dahlia, Google review</figcaption>
+        </figure>
+        <figure class="">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></svg></span>
+          <blockquote>“Both were so personable and professional and cleaned up everything they worked on. My sister had referred Dusty to me because of the good work he had done for them.”</blockquote>
+          <figcaption>Mickey Erwin, Google review</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-more">Quoted from Google reviews of Plumbing Service Company Inc., &amp; HVAC.</p>
+    </div>
+  </section>
+
+  <section class="section area" aria-labelledby="h-area">
+    <div class="wrap">
+      <div>
+        <h2 id="h-area">Where we work</h2>
+        
+        <p>Based in Shallowater. Call to check your area.</p>
+      </div>
+      <div><a class="btn btn-call" href="tel:+18067451822"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg><span>Call (806) 745-1822</span></a></div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><strong>Plumbing Service Company Inc., &amp; HVAC</strong><br>1108 N F M 2378, Shallowater, TX 79363<br>Open 24 hours</div>
+    <div><a href="tel:+18067451822">(806) 745-1822</a><br>This is a preview mockup made for Plumbing Service Company Inc., &amp; HVAC. It is not their official website.</div>
+  </div>
+</footer>
+<nav class="dock single" aria-label="Contact">
+  <a class="btn btn-call" href="tel:+18067451822"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg><span>Call (806) 745-1822</span></a>
+</nav>
+</body>
+</html>
